@@ -31,6 +31,11 @@ body {
 ############### CONFIGURACION GLOBAL ################
 **===================================================*/
 
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 .contenedor {
     width: min(90%, 120rem);
     margin: 0 auto;
@@ -43,7 +48,9 @@ a {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
     font-family: var(--fuenteHeadin);
     line-height: 1.2;
 }
@@ -62,6 +69,14 @@ h3 {
 
 h4 {
     font-size: 2.8rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.2rem;
 }
 
 img {
