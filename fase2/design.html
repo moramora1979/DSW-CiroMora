@@ -1,54 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <title>Fase 2 </title>
 </head>
 
 <body>
-    <header>
-        <h1 style="text-align: center"> <span>UNAD</span> Objetos virtuales de aprendizaje</h1>
+    <header class="header">
+        <div class="contenedor">
+            <h1 class="header__titulo"> <span>Diseños de Sitios Web: </span> Flex Box, CSS Grid</h1>
+        </div>
     </header>
-    <nav>
-        <ul style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-items: flex-start; align-content: space-between; gap: 10px; ">
-            <li style="order: 0; flex: 1 0 auto; align-self: auto;">Inicio</li>
-            <li style="order: 0; flex: 1 0 auto; align-self: auto;">
+    <nav class="nav">
+        <ul class="navigation">
+            <li> <a href="../index.html">Volver</a> </li>
+            <li> <a href="design.html ">Inicio</a> </li>
+            <li class="flex-item">
                 Temas
-                <ul>
-                    <li>Tema 1</li>
-                    <li>Tema 2</li>
+                <ul class="navigation">
+                    <li><a href="tema1.html">Tema 1</a></li>
+                    <li> <a href="tema2.html">Tema 2</a></li>
                 </ul>
             </li>
-            <li style="order: 0; flex: 1 0 auto; align-self: auto;">Recursos digitales
-                <ul>
-                    <li>Recurso 1</li>
-                    <li>Recurso 2</li>
+            <li>Recursos digitales
+                <ul class="navigation">
+                    <li><a href="#">Recurso 1</a> </li>
+                    <li><a href="#">Recurso 2</a></li>
                 </ul>
             </li>
-            <li style="order: 0; flex: 1 0 auto; align-self: auto;">Aprendizaje
-                <ul>
-                    <li>Actividad 1</li>
-                    <li>Actividad 2</li>
+            <li>Aprendizaje
+                <ul class="navigation">
+                    <li><a href="#">Actividad 1</a> </li>
+                    <li><a href="#">Actividad 2</a></li>
                 </ul>
             </li>
-            <li style="order: 0; flex: 1 0 auto; align-self: auto;">Acerca de</li>
+
+            <li><a href="#">Acerca de</a> </li>
+
 
         </ul>
     </nav>
     <section>
         <h2>Propósito del sitio</h2>
 
-        <p>con un párrafo donde se describa el propósito de este sitio, de acuerdo con el tema seleccionado.</p>
-    </section>
-    <article>
-        Agregar una etiqueta "article" , dentro de ella redactar un primer borrador con los contenidos que se publicarán en el sitio web, debidamente citados y referenciados con norma APA, al igual que al menos una imagen que ilustre los temas que se abordan
-        en el sitio.
-    </article>
+        <p>Nuestro propósito es dar a conocer <span>Conceptos básicos de</span> de <b>flexbox</b> y <b>Grid Layout</b> en CSS, esto con el fin de afianzar sus conocimientos en el uso de estas tecnologias.</p>
 
-    <img src="imgs/mockup.PNG" alt="Mockup">
+        <article>
+
+            <p>La autora del libro declaró en rueda de prensa:</p>
+            <blockquote>
+                <p>A pesar de los que muchos piensan, el libro no es autobiográfico, aunque podría encajar en la mayor parte de mi vida</p>
+                <footer>
+                    <cite><a href="https://ejemplo.es/noticias/declariones-de-maria-alvarez" target="_blank">María Álvarez, autora del libro "Bla bla bla"</a></cite>
+                </footer>
+            </blockquote>
+
+
+            Agregar una etiqueta "article" , dentro de ella redactar un primer borrador con los contenidos que se publicarán en el sitio web, debidamente citados y referenciados con norma APA, al igual que al menos una imagen que ilustre los temas que se abordan
+            en el sitio.
+        </article>
+
+
+    </section>
+
+
+    <img src="../imgs/mockup.PNG" alt="Mockup">
 
     <footer>
         Agregar un pie de página usando la etiqueta "footer" con el correo y Skype del autor, y la fecha de actualización
