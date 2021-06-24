@@ -1,0 +1,158 @@
+:root {
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --primario: #B2E3F7;
+    --primarioOscuro: #70A8BF;
+    --secundario: #73E0EA;
+    --secundarioOscuro: #4D959C;
+    --fuenteParrafo: 'Open Sans', sans-seri;
+    --fuenteHeadin: 'PT Sans', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuenteParrafo);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/*===================================================
+############### CONFIGURACION GLOBAL ################
+**===================================================*/
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--fuenteHeadin);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*===================================================
+##################### UTILIDADES ####################
+**===================================================*/
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.no-item-lista {
+    list-style: none;
+    font-weight: bold;
+}
+
+
+/*===================================================
+################### HEADER CABECERA ##################
+**===================================================*/
+
+.header {
+    /*background-image: url(../imgs/logoUnad.png);*/
+    height: 12rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.header__titulo {
+    text-align: center;
+    padding-top: 2rem;
+    margin: 0;
+    position: inherit;
+}
+
+
+/*===================================================
+################### MENU NAVEGACION ##################
+**===================================================*/
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    background: deepskyblue;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
+.navigation a:hover {
+    background: #1565C0;
+}
+
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .navigation {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+}
