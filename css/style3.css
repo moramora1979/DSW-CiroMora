@@ -1,0 +1,260 @@
+:root {
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --primario: #B2E3F7;
+    --primarioOscuro: #70A8BF;
+    --secundario: #73E0EA;
+    --secundarioOscuro: #4D959C;
+    --fuenteParrafo: 'Open Sans', sans-seri;
+    --fuenteHeadin: 'PT Sans', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuenteParrafo);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/*===================================================
+############### CONFIGURACION GLOBAL ################
+**===================================================*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fuenteHeadin);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*===================================================
+##################### UTILIDADES ####################
+**===================================================*/
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.no-item-lista {
+    list-style: none;
+    font-weight: bold;
+}
+
+
+/*===================================================
+################### HEADER CABECERA ##################
+**===================================================*/
+
+.header {
+    background-color: #bf707a;
+    height: 12rem;
+}
+
+.header__titulo {
+    text-align: center;
+    padding-top: 2.5rem;
+    margin: 0;
+    position: inherit;
+}
+
+.navigacion {
+    display: flex;
+    grid-auto-flow: row;
+    gap: 2rem;
+}
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 3.3rem;
+    }
+}
+
+@media (max-width: 280px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+}
+
+
+/*===================================================
+################ NAVEGACION PRINCIPAL ###############
+**===================================================*/
+
+.nav-principal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 0.2rem;
+}
+
+@media (max-width: 540px) {
+    .nav-principal {
+        flex-flow: column wrap;
+    }
+}
+
+.nav-principal a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanco);
+    background: var(--negro);
+    height: 5rem;
+    width: 15rem;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .nav-principal a {
+        width: 12rem;
+    }
+}
+
+.nav-principal a:hover {
+    background: var(--primarioOscuro);
+    color: var(--blanco);
+}
+
+.nav-principal ul {
+    display: flex;
+}
+
+.nav-principal li {
+    text-align: center;
+}
+
+.nav-principal li:hover .navigation-d>li {
+    top: 0;
+    display: block;
+}
+
+.navigation-d li {
+    display: none;
+    position: relative;
+}
+
+.navigation-d {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navigation-d li:hover {
+    display: block;
+}
+
+
+/*
+.nav-principal a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanco);
+    background: var(--negro);
+    height: 5rem;
+    text-decoration: none;
+}
+
+.nav-principal a:hover {
+    background: var(--primarioOscuro);
+    color: var(--blanco);
+}
+
+.nav-principal ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-principal li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-principal li:hover .navigation-d>li {
+    top: 0;
+    display: block;
+}
+
+.navigation-d li {
+    display: none;
+    position: relative;
+}
+
+.navigation-d {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navigation-d li:hover {
+    display: block;
+}
+*/

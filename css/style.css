@@ -171,3 +171,31 @@ img {
         border-bottom: none;
     }
 }
+
+.menu-uno {
+    width: 100%;
+    background: var(--secundarioOscuro);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.menu-uno li {
+    flex-flow: column wrap;
+}
+
+.menu-uno li a {
+    background: var(--secundario);
+    padding: 10px 20px;
+    display: inline-block;
+    color: var(--negro);
+    font-size: 2rem;
+}
+
+.menu-uno li a:hover {
+    background: var(--primario);
+    color: var(--negro);
+}
