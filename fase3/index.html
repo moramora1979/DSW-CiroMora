@@ -20,7 +20,7 @@
             <h1 class="header__titulo"> <span>Diseños de Sitios Web: </span> Flex Box, CSS Grid</h1>
         </div>
     </header>
-    <nav class="nav">
+    <nav class="nav contenedor">
         <ul class="nav-principal">
             <li> <a href="../index.html">Volver</a> </li>
             <li> <a href="index.html">Inicio</a> </li>
@@ -51,12 +51,13 @@
 
         </ul>
     </nav>
-    <main>
-        <section>
-            <h2>Propósito:</h2>
-            <p>Nuestro propósito es dar a conocer <span>Conceptos básicos de</span> de <b>flexbox</b> y <b>Grid Layout</b> en CSS, esto con el fin de afianzar sus conocimientos en el uso de estas tecnologias.</p>
-
-            <article>
+    <main class="contenedor principal">
+        <section class="principal__seccion">
+            <div class="principal__seccion-proposito">
+                <h2>Propósito:</h2>
+                <p>Nuestro propósito es dar a conocer <span>Conceptos básicos de</span> de <b>flexbox</b> y <b>Grid Layout</b> en CSS, esto con el fin de afianzar sus conocimientos en el uso de estas tecnologias.</p>
+            </div>
+            <article class="principal__seccion-tema">
                 <h3>Flexbox y Grid </h3>
                 <p>Son dos mecanismos de CSS que resultan especialmente útiles de cara a la maquetación de páginas web. Comparamos sus principales funcionalidades y, en un primer vistazo, tenemos que reconocer que Grid puede hacer cosas que Flexbox no puede
                     hacer y Flexbox puede hacer cosas que Grid no puede hacer. Con la ventaja de que ambos pueden trabajar juntos: un elemento de Grid puede ser un contenedor Flexbox y un elemento de Flexbox puede ser un contenedor de Grid.
@@ -69,7 +70,7 @@
                 <br>
             </article>
 
-            <article>
+            <article class="principal__seccion-tema">
                 <h3>¿Que es Flexbox?</h3>
                 <p>Es un módulo de diseño de <span>CSS3</span> que se creó para mejorar la forma en la que se hace diseño responsive, evitando así el uso de float, escribiendo menos código y facilitando el posicionamiento de elementos, incluso no teniendo
                     noción del tamaño de éstos. Básicamente la idea de Flexbox es poder alterar el ancho, alto y posicionamiento de elementos de la mejor manera con el espacio del que disponemos.
@@ -83,7 +84,7 @@
                 <br>
             </article>
 
-            <article>
+            <article class="principal__seccion-tema">
                 <h3>¿Que es Grid?</h3>
                 <p>Grid es un modelo de maquetado basado en un sistema de rejillas incorporado en <span>CSS3</span> para gestionar de manera sencilla y customizable la disposición de nuestros elementos en nuestra página web.
 
@@ -96,8 +97,11 @@
 
 
         </section>
-        <aside>
-            <iframe src="https://www.unad.edu.co/" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <aside class="principal_aside">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCcavUnadFacatativa%2F&tabs=timeline&width=300&height=1200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=854701015399021"
+                width="500" height="1200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+
         </aside>
 
     </main>
