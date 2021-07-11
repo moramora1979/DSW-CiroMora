@@ -223,5 +223,10 @@ ul {
 
 .principal_aside {
     padding: 0 1rem;
+    margin-top: 1rem;
     align-items: center;
+}
+
+.principal__seccion-tema {
+    margin-top: 1rem;
 }
