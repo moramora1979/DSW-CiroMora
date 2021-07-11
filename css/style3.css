@@ -209,11 +209,13 @@ ul {
     display: block;
 }
 
-.principal {
-    display: grid;
-    grid-template-columns: 80% auto;
-    gap: 1rem;
-    align-items: center;
+@media (min-width: 768px) {
+    .principal {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        column-gap: 1rem;
+        align-items: center;
+    }
 }
 
 .principal__seccion {
@@ -229,4 +231,43 @@ ul {
 
 .principal__seccion-tema {
     margin-top: 1rem;
+}
+
+
+/*===================================================
+###################### PAGINA AUTOR #################
+**===================================================*/
+
+.autor {
+    padding: 1rem;
+}
+
+.imagen_autor {
+    width: 70%;
+    border-radius: 3rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(51, 45, 45);
+}
+
+@media (min-width: 768px) {
+    .autor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+
+/*===================================================
+####################### FOOTER ######################
+**===================================================*/
+
+.derechos {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.derechos a {
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
 }
