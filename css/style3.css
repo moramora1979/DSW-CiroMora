@@ -285,7 +285,11 @@ ul {
 }
 
 .tema__bloque--imagen {
-    margin-bottom: 2rem;
+    margin: 1rem auto;
+}
+
+.tema__bloque {
+    margin: 1rem 1rem;
 }
 
 @media (min-width: 768px) {
