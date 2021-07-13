@@ -111,7 +111,10 @@ ul {
 **===================================================*/
 
 .header {
-    background-color: #bf707a;
+    background-image: url(../imgs/fondo_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     height: 12rem;
 }
 
