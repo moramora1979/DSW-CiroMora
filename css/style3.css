@@ -165,8 +165,9 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--blanco);
-    background: var(--negro);
+    color: var(--negro);
+    font-weight: bold;
+    background: rgb(134, 138, 149);
     height: 5rem;
     width: 15rem;
     text-decoration: none;
