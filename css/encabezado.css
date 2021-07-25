@@ -1,0 +1,42 @@
+:root {
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --primario: #B2E3F7;
+    --primarioOscuro: #70A8BF;
+    --secundario: #73E0EA;
+    --secundarioOscuro: #4D959C;
+    --fuenteParrafo: 'Open Sans', sans-seri;
+    --fuenteHeadin: 'PT Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*===================================================
+################### HEADER CABECERA ##################
+**===================================================*/
+
+.header {
+    background-image: url(../imgs/fondo_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 12rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(51, 45, 45);
+    margin-bottom: 0.8rem;
+}
+
+.header__titulo {
+    text-align: center;
+    padding-top: 2.5rem;
+    margin: 0;
+    position: inherit;
+}
+
+.navigacion {
+    display: flex;
+    grid-auto-flow: row;
+    gap: 2rem;
+}

@@ -1,0 +1,317 @@
+:root {
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --primario: #B2E3F7;
+    --primarioOscuro: #70A8BF;
+    --secundario: #73E0EA;
+    --secundarioOscuro: #4D959C;
+    --fuenteParrafo: 'Open Sans', sans-seri;
+    --fuenteHeadin: 'PT Sans', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuenteParrafo);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/*===================================================
+############### CONFIGURACION GLOBAL ################
+**===================================================*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fuenteHeadin);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*===================================================
+##################### UTILIDADES ####################
+**===================================================*/
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.no-item-lista {
+    list-style: none;
+    font-weight: bold;
+}
+
+
+/*===================================================
+################### HEADER CABECERA ##################
+**===================================================*/
+
+.header {
+    background-image: url(../imgs/fondo_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 12rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(51, 45, 45);
+    margin-bottom: 0.8rem;
+}
+
+.header__titulo {
+    text-align: center;
+    padding-top: 2.5rem;
+    margin: 0;
+    position: inherit;
+}
+
+.navigacion {
+    display: flex;
+    grid-auto-flow: row;
+    gap: 2rem;
+}
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 3.3rem;
+    }
+}
+
+@media (max-width: 280px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+}
+
+
+/*===================================================
+################ NAVEGACION PRINCIPAL ###############
+**===================================================*/
+
+.nav-principal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 0.2rem;
+}
+
+@media (max-width: 540px) {
+    .nav-principal {
+        flex-flow: column wrap;
+    }
+}
+
+.nav-principal a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--negro);
+    font-weight: bold;
+    background: rgb(134, 138, 149);
+    height: 5rem;
+    width: 15rem;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .nav-principal a {
+        width: 12rem;
+    }
+}
+
+.nav-principal a:hover {
+    background: var(--primarioOscuro);
+    color: var(--blanco);
+}
+
+.nav-principal ul {
+    display: flex;
+}
+
+.nav-principal li {
+    text-align: center;
+}
+
+.nav-principal li:hover .navigation-d>li {
+    top: 0;
+    display: block;
+}
+
+.navigation-d li {
+    display: none;
+    position: relative;
+}
+
+.navigation-d {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navigation-d li:hover {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .principal {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        column-gap: 1rem;
+        align-items: center;
+    }
+}
+
+.principal__seccion {
+    padding: 0 1rem;
+    display: grid;
+}
+
+.principal_aside {
+    padding: 0 1rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.principal__seccion-tema {
+    margin-top: 1rem;
+}
+
+
+/*===================================================
+###################### PAGINA AUTOR #################
+**===================================================*/
+
+.autor {
+    padding: 1rem;
+}
+
+.imagen_autor {
+    width: 70%;
+    border-radius: 3rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(51, 45, 45);
+}
+
+@media (min-width: 768px) {
+    .autor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+
+/*===================================================
+####################### FOOTER ######################
+**===================================================*/
+
+.derechos {
+    margin: 2rem 0;
+    padding: 1rem;
+    height: 5rem;
+    text-align: center;
+    background: var(--primarioOscuro)
+}
+
+.derechos a {
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+
+/*===================================================
+####################### TEMAS ######################
+**===================================================*/
+
+.tema {
+    padding-top: 1rem;
+}
+
+.tema__bloque--imagen {
+    margin: 1rem auto;
+}
+
+.tema__bloque {
+    margin: 1rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .tema__bloque {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+    }
+}
+
+
+/*===================================================
+####################### RECURSOS ######################
+**===================================================*/
+
+.recurso {
+    padding: 1rem;
+    text-align: center;
+}
